@@ -2,7 +2,7 @@
 
 #SBATCH -N 1
 #SBATCH -c {ppn}
-#SBATCH -q {queue_name}
+#SBATCH -p {queue_name}
 #SBATCH -o {errdir}/{name}.stdout
 #SBATCH -e {errdir}/{name}.err
 {slurm_feature}
